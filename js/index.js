@@ -1,8 +1,8 @@
 window.onload = async () => {
     
-    const data = await getStrings();
+    await hideLoadingSpinner(false);
 
-    hideLoadingSpinner("false");
+    const data = await getStrings();
 
     let lang = await loadLangURLs(); 
     loadNavbar(data[lang]);
@@ -11,13 +11,13 @@ window.onload = async () => {
     loadExperiencia(data[lang].experiencia);
     loadHabilidades(data[lang].habilidades);
 
-    hideLoadingSpinner("true");
+    await hideLoadingSpinner(true);
 
 };
 
-function hideLoadingSpinner(status){
+async function hideLoadingSpinner(status){
   
-  const timeout = setTimeout( () => {$("#loading_spinner").attr("hidden", status)} , 200);
+  const timeout =  setTimeout( () => {$("#loading_spinner").attr("hidden", status)} , 750);
   
 }
 
