@@ -1,0 +1,127 @@
+{
+	"formacion": [
+		{
+			"nombre": "Education",
+			"items": [
+				{
+					"titulo": "Bachelor's Degree in Computer Science",
+					"lugar": "Universidad Católica de Salta",
+					"periodo": "2004",
+					"tipo": "Academic"
+				},
+				{
+					"titulo": "Associate Degree in Computer Programming",
+					"lugar": "Universidad Tecnológica Nacional",
+					"periodo": "2002",
+					"tipo": "Tertiary"
+				},
+				{
+					"titulo": "Bachillerato (equivalent to High School diploma)",
+					"lugar": "Instituto San Ramón Nonato",
+					"periodo": "2000",
+					"tipo": "Secondary"
+				}
+			]
+		},
+		{
+			"nombre": "Languages",
+			"items": [
+				{
+					"titulo": "Business English Certificate (BEC) Higher",
+					"lugar": "University of Cambridge",
+					"periodo": "2014",
+					"tipo": "English"
+				},
+				{
+					"titulo": "First Certificate in English (FEC)",
+					"lugar": "University of Cambridge",
+					"periodo": "2004",
+					"tipo": "English"
+				}
+			]
+		},
+		{
+			"nombre": "Training",
+			"items": [
+				{
+					"titulo": "The Complete 2022 Web Development Bootcamp",
+					"lugar": "Udemy",
+					"periodo": "2023",
+					"tipo": "Training Course"
+				},
+				{
+					"titulo": "Achieve Mastery in Data Structures & Algorithms - Java",
+					"lugar": "Udemy",
+					"periodo": "2022",
+					"tipo": "Training Course"
+				},
+				{
+					"titulo": "Java Multithreading, Concurrency & Performance Optimization",
+					"lugar": "Udemy",
+					"periodo": "2022",
+					"tipo": "Training Course"
+				},
+				{
+					"titulo": "Design Patterns in Java",
+					"lugar": "Udemy",
+					"periodo": "2022",
+					"tipo": "Training Course"
+				},
+				{
+					"titulo": "Full Stack Java Developer",
+					"lugar": "Udemy",
+					"periodo": "2022",
+					"tipo": "Training Course"
+				},
+				{
+					"titulo": "Scrum Grand Master",
+					"lugar": "Universidad Tecnológica Nacional (UTN)",
+					"periodo": "2022",
+					"tipo": "Training Course"
+				},
+				{
+					"titulo": "Machine Learning with Python",
+					"lugar": "Universidad Tecnológica Nacional (UTN)",
+					"periodo": "2021",
+					"tipo": "Training Course"
+				},
+				{
+					"titulo": "Undergraduate Degree in Java Programming",
+					"lugar": "Universidad Tecnológica Nacional (UTN)",
+					"periodo": "2020",
+					"tipo": "Undergraduate Degree"
+				},
+				{
+					"titulo": "Python 3 - Advanced Level",
+					"lugar": "Universidad Tecnológica Nacional (UTN)",
+					"periodo": "2020",
+					"tipo": "Training Course"
+				},
+				{
+					"titulo": "Development in React JS",
+					"lugar": "Universidad Tecnológica Nacional (UTN)",
+					"periodo": "2020",
+					"tipo": "Training Course"
+				},
+				{
+					"titulo": "Development in Android",
+					"lugar": "Universidad Tecnológica Nacional (UTN)",
+					"periodo": "2015",
+					"tipo": "Training Course"
+				},
+				{
+					"titulo": "Cisco CCNA (4° module)",
+					"lugar": "ProYDesa",
+					"periodo": "2009",
+					"tipo": "Cisco CCNA"
+				},
+				{
+					"titulo": "Motorola microcontrollers Programming",
+					"lugar": "Private Teacher",
+					"periodo": "2006",
+					"tipo": "Training Course"
+				}
+			]
+		}
+	]
+}

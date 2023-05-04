@@ -1,0 +1,115 @@
+{
+	"formacion": [
+		{
+			"nombre": "Educación",
+			"items": [
+				{
+					"titulo": "Licenciado en Informática",
+					"lugar": "Universidad Católica de Salta",
+					"periodo": "2004",
+					"tipo": "Universitario"
+				},
+				{
+					"titulo": "Técnico Superior en Programación",
+					"lugar": "Universidad Tecnológica Nacional",
+					"periodo": "2002",
+					"tipo": "Terciario"
+				},
+				{
+					"titulo": "Perito Mercantil con orientación en Computación",
+					"lugar": "Instituto San Ramón Nonato",
+					"periodo": "2000",
+					"tipo": "Secundario"
+				}
+			]
+		},
+		{
+			"nombre": "Idiomas",
+			"items": [
+				{
+					"titulo": "Business English Certificate (BEC) Higher",
+					"lugar": "University of Cambridge",
+					"periodo": "2014",
+					"tipo": "Inglés"
+				},
+				{
+					"titulo": "First Certificate in English (FEC)",
+					"lugar": "University of Cambridge",
+					"periodo": "2004",
+					"tipo": "Inglés"
+				}
+			]
+		},
+		{
+			"nombre": "Capacitaciones",
+			"items": [
+				{
+					"titulo": "The Complete 2022 Web Development Bootcamp",
+					"lugar": "Udemy",
+					"periodo": "2023",
+					"tipo": "Curso"
+				},
+				{
+					"titulo": "Achieve Mastery in Data Structures & Algorithms - Java",
+					"lugar": "Udemy",
+					"periodo": "2022",
+					"tipo": "Curso"
+				},
+				{
+					"titulo": "Java Multithreading, Concurrency & Performance Optimization",
+					"lugar": "Udemy",
+					"periodo": "2022",
+					"tipo": "Curso"
+				},
+				{
+					"titulo": "Design Patterns in Java",
+					"lugar": "Udemy",
+					"periodo": "2022",
+					"tipo": "Curso"
+				},
+				{
+					"titulo": "Full Stack Java Developer",
+					"lugar": "Udemy",
+					"periodo": "2022",
+					"tipo": "Curso"
+				},
+				{
+					"titulo": "Scrum Grand Master",
+					"lugar": "Universidad Tecnológica Nacional (UTN)",
+					"periodo": "2022",
+					"tipo": "Curso"
+				},
+				{
+					"titulo": "Machine Learning con Python",
+					"lugar": "Universidad Tecnológica Nacional (UTN)",
+					"periodo": "2021",
+					"tipo": "Curso"
+				},
+				{
+					"titulo": "Diplomatura en Programación Java",
+					"lugar": "Universidad Tecnológica Nacional (UTN)",
+					"periodo": "2020",
+					"tipo": "Diplomatura"
+				},
+				{
+					"titulo": "Python 3 - Nivel Avanzado",
+					"lugar": "Universidad Tecnológica Nacional (UTN)",
+					"periodo": "2020",
+					"tipo": "Curso"
+				},
+				{
+					"titulo": "Desarrollo en React JS",
+					"lugar": "Universidad Tecnológica Nacional (UTN)",
+					"periodo": "2020",
+					"tipo": "Curso"
+				},
+				{
+					"titulo": "Desarrollo en Android",
+					"lugar": "Universidad Tecnológica Nacional (UTN)",
+					"periodo": "2015",
+					"tipo": "Curso"
+				}
+			]
+		}
+	]
+}
