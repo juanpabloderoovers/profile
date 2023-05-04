@@ -1,15 +1,9 @@
 window.onload = async () => {
     
     const data = await getStrings();
-    /*var lang = window.location.search.substring(6,8);
 
-    if (lang != 'es' && lang != 'en' )
-        lang = getLanguage();
-    
-    var url =window.location.origin + window.location.pathname;
-    $('#section_title_anchor_es').attr('href', url + '?lang=es');
-    $('#section_title_anchor_en').attr('href', url + '?lang=en');
-    */
+    hideLoadingSpinner("false");
+
     let lang = await loadLangURLs(); 
     loadNavbar(data[lang]);
     loadMain(data[lang]);
@@ -17,9 +11,15 @@ window.onload = async () => {
     loadExperiencia(data[lang].experiencia);
     loadHabilidades(data[lang].habilidades);
 
-    
+    hideLoadingSpinner("true");
 
 };
+
+function hideLoadingSpinner(status){
+  
+  const timeout = setTimeout( () => {$("#loading_spinner").attr("hidden", status)} , 200);
+  
+}
 
 function getLanguage(){
     
