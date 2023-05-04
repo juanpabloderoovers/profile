@@ -1,7 +1,7 @@
 window.onload = async () => {
     
     const data = await getStrings();
-    var lang = window.location.search.substring(6,8);
+    /*var lang = window.location.search.substring(6,8);
 
     if (lang != 'es' && lang != 'en' )
         lang = getLanguage();
@@ -9,7 +9,8 @@ window.onload = async () => {
     var url =window.location.origin + window.location.pathname;
     $('#section_title_anchor_es').attr('href', url + '?lang=es');
     $('#section_title_anchor_en').attr('href', url + '?lang=en');
-    
+    */
+    let lang = await loadLangURLs(); 
     loadNavbar(data[lang]);
     loadMain(data[lang]);
     loadFormacion(data[lang].formacion);
@@ -29,6 +30,46 @@ function getLanguage(){
     }else{  
       return 'en';
     };
+};
+
+async function loadLangURLs(){
+
+  var lang = "";
+  var sign = "";
+  var url = "";
+    
+  var langIndex = window.location.search.indexOf("lang=");
+
+  if(langIndex > -1){
+
+      lang = window.location.search.substring(langIndex+5,langIndex+7);
+
+      if(langIndex != 1){
+        url = window.location.href.replace("&lang="+lang, "");
+        sign='&';
+      }else{
+        url = window.location.href.replace("?lang="+lang, "");
+        sign = '?';
+      };
+
+    }else{        
+
+      lang = getLanguage();
+      url = window.location.href;
+      
+      if (window.location.search.length>0){
+          sign='&';
+        }else{
+          sign='?';
+        }
+
+    };    
+
+    $('#section_title_anchor_es').attr('href', url + sign + 'lang=es');
+    $('#section_title_anchor_en').attr('href', url + sign + 'lang=en');
+
+    return lang;
+
 };
 
 async function loadNavbar(data){
