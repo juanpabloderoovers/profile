@@ -14,7 +14,7 @@ window.onload = async () => {
     loadExperiencia(data[lang].experiencia);
     loadHabilidades(data[lang].habilidades);
 
-    if(false)
+    if(true)
       loadICSVG();
   
 
