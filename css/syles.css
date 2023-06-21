@@ -320,6 +320,7 @@
     }
 
     .revelar {
+        scroll-margin-top: 150px;
         position: relative;
         transform: translateY(150px);
         opacity: 0;
@@ -761,6 +762,7 @@
     }
 
     .revelar {
+        scroll-margin-top: 150px;
         position: relative;
         transform: translateY(150px);
         opacity: 0;
