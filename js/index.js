@@ -1,7 +1,17 @@
+window.addEventListener("scroll", revelar);
+
+window.onbeforeunload = () => {
+  window.scrollTo(0, 0);
+};
+
 window.onload = async () => {
-    
+  
     await hideLoadingSpinner(false);
 
+    window.scrollTo(0, 0);
+
+    revelar();
+    
     const data = await getStrings();
 
     let lang = await loadLangURLs(); 
@@ -14,7 +24,7 @@ window.onload = async () => {
     loadExperiencia(data[lang].experiencia);
     loadHabilidades(data[lang].habilidades);
 
-    if(true)
+    if(false)
       loadICSVG();
   
 
@@ -279,8 +289,8 @@ async function getStrings(){
               telefono: "+54 9 11 3525-2406",
               telefonoWA: "https://wa.me/5491135252406",
               linkedin: "https://www.linkedin.com/in/juan-pablo-de-roovers/",
-              cvUrl: 'assets/files/Curriculum Vitae - Juan Pablo De Roovers - Mayo 2023.pdf',
-              cvNombre:'Curriculum Vitae - Juan Pablo De Roovers - Mayo 2023.pdf',
+              cvUrl: 'assets/files/Curriculum Vitae - Juan Pablo De Roovers - ES.pdf',
+              cvNombre:'Curriculum Vitae - Juan Pablo De Roovers - ES.pdf',
             },
             mail: "E-mail",
             telefono: "Teléfono",
@@ -326,8 +336,8 @@ async function getStrings(){
               telefono: "+54 9 11 3525-2406",
               telefonoWA: "https://wa.me/5491135252406",
               linkedin: "https://www.linkedin.com/in/juan-pablo-de-roovers/",
-              cvUrl: 'assets/files/Curriculum Vitae - Juan Pablo De Roovers - May 2023.pdf',
-              cvNombre:'Curriculum Vitae - Juan Pablo De Roovers - May 2023.pdf',
+              cvUrl: 'assets/files/Curriculum Vitae - Juan Pablo De Roovers - EN.pdf',
+              cvNombre:'Curriculum Vitae - Juan Pablo De Roovers - EN.pdf',
             },
             mail: "Mail",
             telefono: "Phone",
@@ -1081,3 +1091,20 @@ function loadICSVGData(){
   "</svg>";
 
 };
+
+
+function revelar() {
+  var reveals = document.querySelectorAll(".revelar");
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("activo");
+    } else {
+      reveals[i].classList.remove("activo");
+    }
+  }
+}

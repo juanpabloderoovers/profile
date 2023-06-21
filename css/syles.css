@@ -319,7 +319,17 @@
         font-size: 64px;
     }
 
+    .revelar {
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: 0.8s all ease;
+    }
 
+    .revelar.activo {
+        transform: translateY(0);
+        opacity: 1;
+    }
 
 
 
@@ -750,6 +760,18 @@
         font-size: 64px;
     }
 
+    .revelar {
+        position: relative;
+        transform: translateY(150px);
+        opacity: 0;
+        transition: 0.8s all ease;
+    }
+
+    .revelar.activo {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
 
 
     /* ids */
@@ -805,5 +827,6 @@
     #section_footer {
         text-align: center;
     }
+
 
 }
