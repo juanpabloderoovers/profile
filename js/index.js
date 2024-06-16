@@ -674,7 +674,13 @@ function getXpStrings(lang){
           "periodo": "2015-2022",
           "rol": "Analista Funcional",
           "descripcion": "Análisis y documentación funcional y técnica (C#/SQL/Sybase/SQR/Visual Basic 6). Interacción con usuarios del negocio y proveedores del software. Testing, implementación y mantenimiento de aplicaciones Core del Banco. Resolución de incidentes de sucursales y áreas centrales."
-        }
+        },
+        {
+          "empresa": "Devsu LLC",
+          "periodo": "2022-Presente",
+          "rol": "Java Developer",
+          "descripcion": "Desarrollo de microservicios REST en Java. Framework Spring Boot. MVC y Webflux. Contratos Open API. Bases de datos Microsoft SQL Server. Mensajería en Apache Kafka. Spring Cloud Gateway."
+        }        
       ]
     };
 
@@ -711,7 +717,13 @@ function getXpStrings(lang){
           "periodo": "2015 2022",
           "rol": "Functional Analist",
           "descripcion": "Functional and technical analysis and documentation (C#/SQL/Sybase/SQR/Visual Basic 6). Interaction with users and software providers. Testing, production implementation and maintenance of core banking applications. Resolution of production incidents."
-        }
+        },
+        {
+          "empresa": "Devsu LLC",
+          "periodo": "2022-Present",
+          "rol": "Java Developer",
+          "descripcion": "REST Microservices development in Java. Spring Boot Framework. MVC and Webflux. Open API contracts. Microsoft SQL Server databases. Apache Kafka messaging. Spring Cloud Gateway."
+        }         
       ]
     }
 
@@ -730,7 +742,7 @@ if (lang == 'es'){
         "items": [
           {
             "nombre": "Java",
-            "valor": 80
+            "valor": 90
           },
           {
             "nombre": "SQL",
@@ -892,7 +904,7 @@ if (lang == 'es'){
         "items": [
           {
             "nombre": "Java",
-            "valor": 80
+            "valor": 90
           },
           {
             "nombre": "SQL",
