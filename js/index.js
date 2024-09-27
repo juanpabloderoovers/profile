@@ -323,9 +323,9 @@ async function getStrings(){
         },
         en: {
           left_menu: {
-            formacion: "(Education)",
-            experiencia: "(Experience)",
-            habilidades: "(Skills)",            
+            formacion: "Education",
+            experiencia: "Work Experience",
+            habilidades: "Skills",            
           },
           main_name: {
             subtitulo: "Bachelor's degree in computer science",
@@ -354,19 +354,19 @@ async function getStrings(){
             textoBoton: "Download Resume",
           },
           formacion: {
-            titulo: "(Education)",
+            titulo: "Education",
             anio: "Year",
             galardon: "Degree/Certificate",
             lugar: "Place",
             data: getFormacionStrings('en')
           },
           experiencia: {
-            titulo: "(Experience)",
+            titulo: "Work Experience",
             data: getXpStrings('en'),
             actualidad: "Present",
           },
           habilidades: {
-            titulo: "(Skills)",
+            titulo: "Skills",
             data: getHabilidadesStrings('en')
           },
         },
