@@ -110,6 +110,11 @@ async function loadMain(data){
     $("#main_name_about_details_linkedin_left").text(data.about_home.linkedin);    
     $("#main_name_about_details_linkedin_right").append(
       "<a href='"+data.about_home.data.linkedin+"' tabIndex=-1>" + data.about_home.data.linkedin + "</a>" );
+    
+    $("#main_name_about_details_ecn_left").text(data.about_home.ecn);    
+      $("#main_name_about_details_ecn_right").append(
+        "<a href='"+data.about_home.data.ecn+"' tabIndex=-1>" + data.about_home.data.ecn + "</a>" );
+
     $("#main_name_about_details_file_left").text("PDF");    
     $("#about_home_details_button").text(data.about_home.textoBoton);   
     $('#about_home_details_button').attr('href', data.about_home.data.cvUrl);
@@ -289,12 +294,14 @@ async function getStrings(){
               telefono: "+54 9 11 3525-2406",
               telefonoWA: "https://wa.me/5491135252406",
               linkedin: "https://www.linkedin.com/in/juan-pablo-de-roovers/",
+              ecn: "https://www.english-career-network.com/juan-pablo-de-roovers-resid-1147",
               cvUrl: 'assets/files/Curriculum Vitae - Juan Pablo De Roovers - ES.pdf',
               cvNombre:'Curriculum Vitae - Juan Pablo De Roovers - ES.pdf',
             },
             mail: "E-mail",
             telefono: "Teléfono",
             linkedin: "LinkedIn",
+            ecn: "English Career Network",
             textoBoton: "Descargar C.V.",
           },
           formacion: {
@@ -336,12 +343,14 @@ async function getStrings(){
               telefono: "+54 9 11 3525-2406",
               telefonoWA: "https://wa.me/5491135252406",
               linkedin: "https://www.linkedin.com/in/juan-pablo-de-roovers/",
+              ecn: "https://www.english-career-network.com/juan-pablo-de-roovers-resid-1147",
               cvUrl: 'assets/files/Curriculum Vitae - Juan Pablo De Roovers - EN.pdf',
               cvNombre:'Curriculum Vitae - Juan Pablo De Roovers - EN.pdf',
             },
             mail: "Mail",
             telefono: "Phone",
             linkedin: "LinkedIn",
+            ecn: "English Career Network",
             textoBoton: "Download Resume",
           },
           formacion: {
