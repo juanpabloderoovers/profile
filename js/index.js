@@ -208,7 +208,7 @@ async function loadHabilidades(data){
 
     for (var j = 0; j < data.data.areas[i].items.length; j++){
 
-      var item = "<div class='row content_habilidades_row_content_row'>"+data.data.areas[i].items[j].nombre+"</div>";      
+      var item = "<div class='row content_habilidades_row_content_row'>- "+data.data.areas[i].items[j].nombre+"</div>";      
 
       if((j+1) % 2 > 0 ){
         subContentC1+=item;
@@ -269,9 +269,9 @@ async function getStrings(){
     return {
         es: {   
           left_menu: {
-            formacion: "(Formación)",
-            experiencia: "(Experiencia)",
-            habilidades: "(Habilidades)",
+            formacion: "Formación",
+            experiencia: "Experiencia",
+            habilidades: "Habilidades",
           },
           main_name: {
             subtitulo: "Analista Programador",
@@ -279,10 +279,10 @@ async function getStrings(){
           about_home: {
             titulo: "Sobre mí",
             texto: [
-              "Soy Analista Funcional y Programador de Sistemas Informáticos.<br><br>",
-              "Me considero afortunado al haber podido estudiar y además trabajar de lo que me apasiona.<br>",
-              "Las tecnologías de la información permiten diseñar nuestro futuro y eso me parece fascinante.<br><br>",
-              "Soy Argentino y vivo en Buenos Aires.",
+              "¡Hola! Bienvenidos a mi perfil.<br>",
+              "Me gano la vida como <strong>programador</strong> en Java y <strong>analista funcional</strong>.<br>",                            
+              "Soy <strong>Argentino</strong> y vivo en <strong>Buenos Aires</strong>.<br>",              
+              "Los invito a descubrir mis conocimientos, experiencias y habilidades.<br><br>",                                         
             ],
             data: {
               mail: "juanpabloderoovers@hotmail.com",
@@ -298,19 +298,19 @@ async function getStrings(){
             textoBoton: "Descargar C.V.",
           },
           formacion: {
-            titulo: "(Formación)",
+            titulo: "Formación",
             anio: "Año",
             galardon: "Título",
             lugar: "Lugar",
             data: getFormacionStrings('es')
           },
           experiencia: {
-            titulo: "(Experiencia)",
+            titulo: "Experiencia",
             data: getXpStrings('es'),
             actualidad: "Actualidad",
           },
           habilidades: {
-            titulo: "(Habilidades)",
+            titulo: "Habilidades",
             data: getHabilidadesStrings('es')
           },
         },
@@ -321,15 +321,15 @@ async function getStrings(){
             habilidades: "(Skills)",            
           },
           main_name: {
-            subtitulo: "Degree in Computer Science",
+            subtitulo: "Bachelor's degree in computer science",
           },
           about_home: {
             titulo: "About me",
             texto: [                                          
-              "I am a Functional Analyst and Programmer of Information Systems.<br><br>",
-              "I consider myself blessed, having studied and then worked in something I am passionate about. <br>",
-              "Information technologies allow us to shape the future, which is something I find amazing.<br><br>",
-              "I'm Argentinian and I live in Buenos Aires. ",
+              "Hello! Welcome to my profile.<br>",
+              "I make a living as a Java <strong>programmer</strong> and <strong>functional analyst</strong>.<br>",
+              "I am <strong>Argentine</strong> and I live in <strong>Buenos Aires</strong>.<br>",              
+              "I invite you to discover my knowledge, work experience and skills.<br><br>",              
             ],
             data: {
               mail: "juanpabloderoovers@hotmail.com",
@@ -418,6 +418,12 @@ function getFormacionStrings(lang){
         {
           "nombre": "Capacitaciones",
           "items": [
+            {
+              "titulo": "Event-Driven Microservices: Spring Boot, Kafka and Elastic",
+              "lugar": "Udemy",
+              "periodo": "2024",
+              "tipo": "Curso"
+            },            
             {
               "titulo": "The Complete 2022 Web Development Bootcamp",
               "lugar": "Udemy",
@@ -648,7 +654,7 @@ function getXpStrings(lang){
         {
           "empresa": "Accenture S.R.L para Institución Bancaria",
           "periodo": "2006-2008",
-          "rol": "Programador",
+          "rol": "Trainee",
           "descripcion": "Desarrollo en Cobol/JCL/CICS, documentación y prueba de componentes de aplicativos del Banco en plataforma Mainframe (IBM OS/2/Cobol/JCL/CICS). Manejo de archivos (Secuenciales/VSAM) y bases de datos (SQL/DB2). Resolución de incidentes y desarrollo de mejoras."
         },
         {
@@ -677,9 +683,9 @@ function getXpStrings(lang){
         },
         {
           "empresa": "Devsu LLC",
-          "periodo": "2022-Presente",
+          "periodo": "2023-Presente",
           "rol": "Java Developer",
-          "descripcion": "Desarrollo de microservicios REST en Java. Framework Spring Boot. MVC y Webflux. Contratos Open API. Bases de datos Microsoft SQL Server. Mensajería en Apache Kafka. Spring Cloud Gateway."
+          "descripcion": "Desarrollo de microservicios REST en Java, utilizando el framework Spring Boot 3+, tanto en MVC como Webflux. Pruebas unitarias y de integración. Generación de contratos Open API. Repositorios de bases de datos Microsoft SQL Server y PostgreSQL. Mensajería en Apache Kafka. Consumo de servicios Stratio (Data Rest). Encriptación RSA y tokens JWT. Desarrollo de ruteos y filtros con Spring Cloud Gateway. Atlassian Jira para el seguimiento y control de tareas."
         }        
       ]
     };
@@ -691,19 +697,19 @@ function getXpStrings(lang){
         {
           "empresa": "Accenture S.R.L (working for main Argentinian bank)",
           "periodo": "2006",
-          "rol": "Programmer",
+          "rol": "Trainee",
           "descripcion": "Development with Cobol/JCL/CICS, documentation and testing of core banking applications (Mainframe platform - IBM OS/2). Files (sequential/VSAM) and database (SQL/DB2) handling. Incidents resolution and system upgrades development."
         },
         {
           "empresa": "Accenture S.R.L (working for main Argentinian bank)",
           "periodo": "2008",
-          "rol": "Junior Analist",
+          "rol": "Junior Analyst",
           "descripcion": "Programmers team management (2 members). Analysis and technical designs documentation. Development with COBOL/JCL/CICS and testing of core banking applications. Resolution of production incidents. On-call support during overnight batch processing."
         },
         {
           "empresa": "Accenture S.R.L (working for main Argentinian bank)",
           "periodo": "2010",
-          "rol": "Senior Analist",
+          "rol": "Senior Analyst",
           "descripcion": "Maintenance team management (4 members). Development with COBOL/JCL/CICS. Testing, production implementation and post-implementation support. Direct contact with clients. Production incidents resolution."
         },
         {
@@ -715,14 +721,14 @@ function getXpStrings(lang){
         {
           "empresa": "Banco Macro S.A.",
           "periodo": "2015 2022",
-          "rol": "Functional Analist",
+          "rol": "Functional Analyst",
           "descripcion": "Functional and technical analysis and documentation (C#/SQL/Sybase/SQR/Visual Basic 6). Interaction with users and software providers. Testing, production implementation and maintenance of core banking applications. Resolution of production incidents."
         },
         {
           "empresa": "Devsu LLC",
-          "periodo": "2022-Present",
+          "periodo": "2023-Present",
           "rol": "Java Developer",
-          "descripcion": "REST Microservices development in Java. Spring Boot Framework. MVC and Webflux. Open API contracts. Microsoft SQL Server databases. Apache Kafka messaging. Spring Cloud Gateway."
+          "descripcion": "Development of REST microservices in Java, using the Spring Boot 3+ framework, both in MVC and Webflux. Unit and integration testing. Generation of Open API contracts. Microsoft SQL Server and PostgreSQL database repositories. Messaging in Apache Kafka. Consumption of Stratio services (Data Rest). RSA encryption and JWT tokens. Development of routes and filters with Spring Cloud Gateway. Atlassian Jira for task tracking and control."
         }         
       ]
     }
@@ -741,7 +747,7 @@ if (lang == 'es'){
         "nombre": "Lenguajes de Programación",
         "items": [
           {
-            "nombre": "Java",
+            "nombre": "Java + Spring Boot + Webflux",
             "valor": 90
           },
           {
@@ -749,37 +755,86 @@ if (lang == 'es'){
             "valor": 80
           },
           {
+            "nombre": "HTML + CSS ",
+            "valor": 60
+          },           
+          {
             "nombre": "Javascript",
             "valor": 70
-          },
-          {
-            "nombre": "C#",
-            "valor": 70
-          },
-          {
-            "nombre": "HTML / CSS ",
-            "valor": 60
-          },
+          },                  
           {
             "nombre": "Python",
             "valor": 60
-          },
+          },         
           {
             "nombre": "COBOL",
             "valor": 80
-          },
-          {
-            "nombre": "C / C++",
-            "valor": 60
-          },
+          },                    
           {
             "nombre": "Visual Basic",
             "valor": 80
           },
           {
+            "nombre": "C#",
+            "valor": 70
+          },           
+          {
             "nombre": "Assembler (MCUs)",
             "valor": 50
           }
+        ]
+      },
+      {
+        "nombre": "Herramientas / Software",
+        "items": [         
+          {
+            "nombre": "Intellij Idea (IDE)",
+            "valor": 75
+          },                           
+          {
+            "nombre": "VS Code (IDE)",
+            "valor": 70
+          },                    
+          {
+            "nombre": "Postman | SoapUI",
+            "valor": 70
+          },
+          {
+            "nombre": "Microsoft Azure DevOps",
+            "valor": 70
+          },        
+          {
+            "nombre": "Lens IDE",
+            "valor": 70
+          },              
+          {
+            "nombre": "Docker + Kubernetes",
+            "valor": 70
+          },  
+          {
+            "nombre": "Microsoft SQL Server Management Studio",
+            "valor": 70
+          },              
+          {
+            "nombre": "DBeaver",
+            "valor": 70
+          },            
+          {
+            "nombre": "Atlassian Jira",
+            "valor": 70
+          },             
+          {
+            "nombre": "GIT",
+            "valor": 60
+          },
+          {
+            "nombre": "Microsoft Office",
+            "valor": 60
+          },          
+          {
+            "nombre": "DOS / Comandos Batch",
+            "valor": 60
+          },
         ]
       },
       {
@@ -833,66 +888,10 @@ if (lang == 'es'){
           {
             "nombre": "TSO",
             "valor": 70
-          },
-          {
-            "nombre": "IBM FileAid para DB2",
-            "valor": 60
-          },
-          {
-            "nombre": "Archivos IBM VSAM",
-            "valor": 60
-          }
-        ]
-      },
-      {
-        "nombre": "Herramientas / Software",
-        "items": [
-          {
-            "nombre": "Eclipse (IDE)",
-            "valor": 80
-          },
-          {
-            "nombre": "MS Excel-Word-Outlook-Powerpoint",
-            "valor": 75
-          },
-          {
-            "nombre": "Android Studio (IDE)",
-            "valor": 50
-          },
-          {
-            "nombre": "MS Powershell",
-            "valor": 75
-          },
-          {
-            "nombre": "MS Visual Studio & VS Code (IDE)",
-            "valor": 70
-          },
-          {
-            "nombre": "Rational ClearQuest",
-            "valor": 70
-          },
-          {
-            "nombre": "BMC Remedy ITSM",
-            "valor": 70
-          },
-          {
-            "nombre": "Rational ClearCase",
-            "valor": 70
-          },
-          {
-            "nombre": "DOS / Comandos Batch",
-            "valor": 60
-          },
-          {
-            "nombre": "FTP",
-            "valor": 70
-          },
-          {
-            "nombre": "GIT",
-            "valor": 60
           }
         ]
       }
+ 
     ]
   };
 }else{
@@ -903,7 +902,7 @@ if (lang == 'es'){
         "nombre": "Programming Languages",
         "items": [
           {
-            "nombre": "Java",
+            "nombre": "Java + Spring Boot + Webflux",
             "valor": 90
           },
           {
@@ -911,39 +910,88 @@ if (lang == 'es'){
             "valor": 80
           },
           {
+            "nombre": "HTML + CSS ",
+            "valor": 60
+          },           
+          {
             "nombre": "Javascript",
             "valor": 70
-          },
-          {
-            "nombre": "C#",
-            "valor": 70
-          },
-          {
-            "nombre": "HTML / CSS ",
-            "valor": 60
-          },
+          },                  
           {
             "nombre": "Python",
             "valor": 60
-          },
+          },         
           {
             "nombre": "COBOL",
             "valor": 80
-          },
-          {
-            "nombre": "C / C++",
-            "valor": 60
-          },
+          },                    
           {
             "nombre": "Visual Basic",
             "valor": 80
           },
+          {
+            "nombre": "C#",
+            "valor": 70
+          },           
           {
             "nombre": "Assembler (MCUs)",
             "valor": 50
           }
         ]
       },
+      {
+        "nombre": "Tools / Software",
+        "items": [         
+          {
+            "nombre": "Intellij Idea (IDE)",
+            "valor": 75
+          },                           
+          {
+            "nombre": "VS Code (IDE)",
+            "valor": 70
+          },                    
+          {
+            "nombre": "Postman | SoapUI",
+            "valor": 70
+          },
+          {
+            "nombre": "Microsoft Azure DevOps",
+            "valor": 70
+          },        
+          {
+            "nombre": "Lens IDE",
+            "valor": 70
+          },              
+          {
+            "nombre": "Docker + Kubernetes",
+            "valor": 70
+          },  
+          {
+            "nombre": "Microsoft SQL Server Management Studio",
+            "valor": 70
+          },              
+          {
+            "nombre": "DBeaver",
+            "valor": 70
+          },            
+          {
+            "nombre": "Atlassian Jira",
+            "valor": 70
+          },             
+          {
+            "nombre": "GIT",
+            "valor": 60
+          },
+          {
+            "nombre": "Microsoft Office",
+            "valor": 60
+          },          
+          {
+            "nombre": "DOS / Batch Commands",
+            "valor": 60
+          },
+        ]
+      }, 
       {
         "nombre": "Sybase SQL Server (SAP ASE) Platform",
         "items": [
@@ -995,66 +1043,9 @@ if (lang == 'es'){
           {
             "nombre": "TSO",
             "valor": 70
-          },
-          {
-            "nombre": "IBM FileAid for DB2",
-            "valor": 60
-          },
-          {
-            "nombre": "IBM VSAM Files",
-            "valor": 60
-          }
+          }         
         ]
-      },
-      {
-        "nombre": "Tools / Software",
-        "items": [
-          {
-            "nombre": "Eclipse (IDE)",
-            "valor": 80
-          },
-          {
-            "nombre": "MS Excel-Word-Outlook-Powerpoint",
-            "valor": 75
-          },
-          {
-            "nombre": "Android Studio (IDE)",
-            "valor": 50
-          },
-          {
-            "nombre": "MS Powershell",
-            "valor": 75
-          },
-          {
-            "nombre": "MS Visual Studio & VS Code (IDE)",
-            "valor": 70
-          },
-          {
-            "nombre": "Rational ClearQuest",
-            "valor": 70
-          },
-          {
-            "nombre": "BMC Remedy ITSM",
-            "valor": 70
-          },
-          {
-            "nombre": "Rational ClearCase",
-            "valor": 70
-          },
-          {
-            "nombre": "DOS / Batch Commands",
-            "valor": 60
-          },
-          {
-            "nombre": "FTP",
-            "valor": 70
-          },
-          {
-            "nombre": "GIT",
-            "valor": 60
-          }
-        ]
-      }
+      }      
     ]
   };
 };
