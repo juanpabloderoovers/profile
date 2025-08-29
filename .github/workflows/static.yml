@@ -25,3 +25,4 @@ jobs:
           git add .
           git commit -m "Deploy $(date)" || echo "No changes to commit"
           git push origin main
+
