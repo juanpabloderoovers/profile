@@ -1,0 +1,21 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - prod
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout privado
+        uses: actions/checkout@v4
+
+      - name: Deploy al repo público
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          external_repository: juanpabloderoovers/profile
+          publish_dir: ./
+          personal_token: ${{ secrets.PAT }}
+          publish_branch: main
