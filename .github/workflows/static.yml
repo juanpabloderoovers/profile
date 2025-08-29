@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages v2
+name: Deploy to GitHub Pages v3
 
 on:
   push:
@@ -18,10 +18,10 @@ jobs:
 
       - name: Clonar repo público
         run: |
-          git clone https://x-access-token:${{ secrets.PAT }}@github.com/juanpabloderoovers/profile.git public
-          rm -rf public/*
-          cp -r * public/
-          cd public
+          git clone https://x-access-token:${{ secrets.PAT }}@github.com/juanpabloderoovers/profile.git repo_publico
+          rm -rf repo_publico/*
+          cp -r * repo_publico/
+          cd repo_publico
           git add .
           git commit -m "Deploy $(date)" || echo "No changes to commit"
           git push origin main
