@@ -837,7 +837,7 @@
     #section_intro {
         padding-top: 40px;
         padding-bottom: 200px;
-        background-image: url(assets/img/nuevo_fondo.jpg);
+        background-image: url(../assets/img/nuevo_fondo.jpg);
         background-repeat: no-repeat;        
         background-size: 180ex 100%;
         background-position: center center;
